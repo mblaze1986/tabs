@@ -1,0 +1,125 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8333333333vw;
+
+  // delete_before_work!!!
+  background: rgb(240, 255, 255);
+}
+
+.container {
+  max-width: em(1020);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+
+  // delete_before_work!!!
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs {
+  margin-top: em(30);
+  width: 100%;
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn {
+    background-color: rgb(17, 172, 172);
+    border: 1px solid #000;
+    flex: 1 0 auto;
+    padding: em(15);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: rgb(14, 117, 117);
+    }
+
+    &--is-active {
+      background-color: rgb(160, 109, 51);
+    }
+  }
+
+  &__content {
+    min-height: em(150);
+  }
+
+  &__item {
+    background-color: darkolivegreen;
+    border: 1px solid #000;
+    padding: em(10);
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: em(10);
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: em(20);
+  }
+}
+
+.vertical-tabs {
+  margin-top: em(30);
+  width: 100%;
+  display: flex;
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+
+  &__btn {
+    background-color: rgb(53, 156, 58);
+    border: 1px solid #000;
+    flex: 1 0 auto;
+    padding: em(15);
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      background-color: rgb(38, 102, 41);
+    }
+
+    &--is-active {
+      background-color: rgb(41, 174, 197);
+    }
+  }
+
+  &__content {
+    min-height: em(130);
+    width: 75%;
+  }
+
+  &__item {
+    background-color: rgb(194, 174, 88);
+    border: 1px solid #000;
+    padding: em(20);
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    margin-bottom: em(10);
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: em(20);
+  }
+}
